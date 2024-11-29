@@ -36,7 +36,7 @@ def enviar_requisicao(input_text):
         st.error(f'Erro ao enviar a requisição. {error_message.get("error", "")}')
 
 def atualizar_dados(input_text_2):
-    response = requests.get(f'http://mal-datadashboard.onrender.com/api/atualizar_dados/{input_text_2}', timeout=300)
+    response = requests.get(f'http://mal-datadashboard.onrender.com/api/atualizar_dados/{input_text_2}', timeout=600)
     if response.status_code == 200:
         enviar_requisicao(input_text_2)
     else:
