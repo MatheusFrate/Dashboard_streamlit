@@ -11,6 +11,7 @@ pages_with_df ={
 "Dashboard": [
         st.Page("./streamlit_pages/dashboard.py", title="Dashboard"),
         st.Page("./streamlit_pages/randomizer.py", title="Randomizador"),
+        st.Page("./streamlit_pages/rss.py", title="rss"),
         
     ],
 }

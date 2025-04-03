@@ -17,6 +17,7 @@ def enviar_requisicao(input_text):
         st.session_state.clear()
         st.error(f'Erro ao enviar a requisição. Não foi informado um perfil para ser analisado')
     else:
+        st.session_state['nome'] = input_text
         st.markdown( 
             f""" 
                 <h1>
